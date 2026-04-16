@@ -1,8 +1,8 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Jayden Okafor
+ * Created on: Apr 2026
+ * This program sends the word "too close" to another microbit if the distance is below 10cm away
 */
 
 // clear screen
