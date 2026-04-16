@@ -12,6 +12,7 @@ basic.showIcon(IconNames.Happy)
 // assign the radio to the same number as your partner to avoid conflict with other microbits
 radio.setGroup(168)
 
+// when the "A" button is pressed
 input.onButtonPressed(Button.A, function () {
 
     // makes this loop run forever
