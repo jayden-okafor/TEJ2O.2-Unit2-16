@@ -25,7 +25,7 @@ input.onButtonPressed(Button.A, function () {
             basic.clearScreen()
             basic.showIcon(IconNames.Triangle)
             radio.sendString("Too close!")
-            basic.pause(6000)
+            basic.pause(8000)
         }
         basic.clearScreen()
         basic.showIcon(IconNames.Happy)
