@@ -9,24 +9,30 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// assign he radio to the same number as your partner to avoid conflict with other microbits
+// assign the radio to the same number as your partner to avoid conflict with other microbits
 radio.setGroup(168)
 
 input.onButtonPressed(Button.A, function () {
 
+    // makes this loop run forever
     while (true) {
+
+        // measure the distance in cm
         const distance = sonar.ping(
             DigitalPin.P1, // trigger
             DigitalPin.P2, // echo
-            PingUnit.Centimeters,
+            PingUnit.Centimeters, // converts distance to cm
         )
 
+        // runs if distance is below 10cm and sends the word "too close" to the other microbit
         if (distance > 0 && distance <= 10) {
             basic.clearScreen()
             basic.showIcon(IconNames.Triangle)
             radio.sendString("Too close!")
             basic.pause(8000)
         }
+
+        // clears screen and shows happy face
         basic.clearScreen()
         basic.showIcon(IconNames.Happy)
     }
