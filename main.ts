@@ -5,4 +5,28 @@
  * This program ...
 */
 
-basic.showString('Hello, World!')
+// clear screen
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+// assign he radio to the same number as your partner to avoid conflict with other microbits
+radio.setGroup(168)
+
+input.onButtonPressed(Button.A, function () {
+
+    while (true) {
+        const distance = sonar.ping(
+            DigitalPin.P1, // trigger
+            DigitalPin.P2, // echo
+            PingUnit.Centimeters,
+        )
+
+        if (distance > 0 && distance <= 10) {
+            basic.clearScreen()
+            basic.showIcon(IconNames.Triangle)
+            radio.sendString("Too close!")
+        }
+        basic.clearScreen()
+        basic.showIcon(IconNames.Happy)
+    }
+})
