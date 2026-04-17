@@ -20,7 +20,7 @@ input.onButtonPressed(Button.A, function () {
 
         // measure the distance in cm
         const distance = sonar.ping(
-            DigitalPin.P1, // trigger
+            DigitalPin.P0, // trigger
             DigitalPin.P2, // echo
             PingUnit.Centimeters, // converts distance to cm
         )
