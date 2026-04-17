@@ -1,4 +1,4 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2026 MTHS All rights reserved
  *
  * Created by: Jayden Okafor
  * Created on: Apr 2026
