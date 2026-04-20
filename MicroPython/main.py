@@ -85,7 +85,7 @@ while True:
                 display.clear()
                 display.show(Image.TRIANGLE)
                 radio.send("Too close!")
-                sleep(10000)
+                sleep(8000)
 
             # clears screen and shows happy face
             display.clear()
